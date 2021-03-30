@@ -7,10 +7,10 @@ print(Fore.BLUE + "the bad use of this bot\n")
 
 print(Fore.GREEN + "Do you want to turn on the bot?")
 
-r = input(Fore.YELLOW + "(Y/N): ").lower()
-if r == "y":
+i = input(Fore.YELLOW + "(Y/N): ").lower()
+if i == "y":
     print("Starting Bot...")
-elif r == "n":
+elif i == "n":
     print(Style.RESET_ALL)
     sys.exit(0)
 else:
@@ -20,3 +20,5 @@ else:
 import json
 import discord
 
+with open("config.json", "r") as d:
+    data = d.read()
